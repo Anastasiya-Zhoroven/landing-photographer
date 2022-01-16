@@ -449,3 +449,99 @@ body {
     color: white;
     cursor:pointer;
   }
+
+  .footer-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      /* height: 150px; */
+      padding: 50px 20px;
+  }
+
+  .footer-info {
+
+  }
+
+  .footer-info-ico { 
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+
+  .footer-info-year {
+    color: white;
+    padding-left: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+
+  .github-link {
+    text-decoration: none;
+    padding-left: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+
+  .rs-school-link {
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+
+.social-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.inst-link {
+    background: url("assets/svg/inst.svg");
+}
+
+.inst-link:hover, .inst-link:focus, .inst-link:active {
+  transition: .3s;
+  background: url("assets/svg/inst-hover.svg");
+}
+
+.fb-link {
+    background: url("assets/svg/fb.svg");
+}
+
+.fb-link:hover, .fb-link:focus, .fb-link:active {
+  transition: .3s;
+  background: url("assets/svg/fb-hover.svg");
+}
+
+.tw-link {
+    background: url("assets/svg/tw.svg");
+}
+
+.tw-link:hover, .tw-link:focus, .tw-link:active {
+  transition: .3s;
+  background: url("assets/svg/tw-hover.svg");
+}
+
+.pinterest-link {
+    background: url("assets/svg/pinterest.svg");
+}
+
+.pinterest-link:hover, .pinterest-link:focus, .pinterest-link:active {
+  transition: .3s;
+  background: url("assets/svg/pinterest-hover.svg");
+}
