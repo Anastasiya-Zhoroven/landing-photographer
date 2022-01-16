@@ -1,5 +1,249 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url("assets/fonts/Merriweather/Merriweather-Bold.ttf");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url("assets/fonts/Inter/static/Inter-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url("assets/fonts/Inter/static/Inter-Bold.ttf");
+    font-weight: 700;
+  }
+
+  h {
+      font-family: Merriweather;
+  }
+
+  p {
+    font-family: Inter; 
+  }
+
+body {
+background-color: black;
+}
 .container {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    transition: color .3s;
+  }
+
+  .nav-link:hover, .nav-link:focus, nav-link:active {
+      transition: .3s;
+      color: #BDAE82;
+  }
+
+  .logo {
+      padding: 20px;
+      transition: 0.3s;
+  }
+
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+
+  .container-header {
+      display: flex;
+      background: url("assets/img/bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center 0;
+  }
+
+  .nav {
+    margin-left: auto;
+  }
+
+  .switch-lang {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    margin: 16px 0;
+  }
+
+  .active-lang {
+      color: #BDAE82;
+  }
+
+.section-hero {
+    background-image: url('./assets/img/bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    height: 820px;
+}
+
+.hero-container {
+    padding-top: 160px;
+    padding-left: 80px;
+}
+
+.hero-name {
+    display:flex;
+    position:relative;
+    height: 120px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color:white;
+    margin:0 0 10px 0;
+  }
+
+  .hero-desc {
+    display:flex;
+    height: 120px;
+    width:470px;
+    left: 0%;
+    right: 6%;
+    top: 130px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color:white;
+    margin: 0 0 25px 0;
+  }
+
+  .hire-me-btn {
+    height: 55px;
+    width: 220px;
+    left: 0%;
+    right: 56%;
+    top: 275px;
+    background-color: #BDAE82;
+    border: 0;
+    cursor: pointer; 
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px; 
+    transition: color .3s;
+  }
+
+  .hire-me-btn:hover, .hire-me-btn:focus, .hire-me-btn:active {
+    transition: .3s;
+    color: white;
+  }
+
+.title-container {
+    width: 50%;
+    margin: 100px auto 0;
+    text-align: center;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+
+  }
+
+.section-title {
+font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+text-align: center;
+color: #BDAE82;
+background-color: black;
+display: inline;
+padding: 0 20px;
+}
+
+.skills-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .skill-item {
+    background-position: center top;
+    width: 240px;
+    height: 320px;
+  }
+
+  .skill-item:nth-child(1) {
+    background-image: url("assets/svg/camera.svg");
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+  }
+
+  .skill-item:nth-child(2) {
+    background-image: url("assets/svg/video.svg");
+    background-size: 60px 50px;
+    background-repeat: no-repeat;
+  }
+
+  .skill-item:nth-child(3) {
+    background-image: url("assets/svg/image.svg");
+    background-size: 66px 50px;
+    background-repeat: no-repeat;
+  }
+
+  .skill-item:nth-child(4) {
+    background-image: url("assets/svg/mic.svg");
+    background-size: 32px 50px;
+    background-repeat: no-repeat;
+  }
+
+  .skill-item-title {
+    display:flex;
+    width: 280px;
+    height: 40px;
+    left: calc(50% - 280px/2);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    margin:0;
+  }
+
+  .skill-item-desc {
+    width: 280px;
+    height: 72px;
+    left: calc(50% - 280px/2);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    margin:0;
   }
