@@ -161,6 +161,7 @@ body {
   .hire-me-btn:hover, .hire-me-btn:focus, .hire-me-btn:active {
     transition: .3s;
     color: white;
+    cursor:pointer;
   }
 
 .title-container {
@@ -258,7 +259,6 @@ body {
     left: 0%;
     right: 56%;
     background-color: black;
-    border: solid .5px #BDAE82;
     cursor: pointer; 
     font-family: Inter;
     font-style: normal;
@@ -267,6 +267,9 @@ body {
     line-height: 40px; 
     color: #BDAE82;
     transition: color background-color .3s;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
   }
 
   .season-btn:hover, .season-btn:focus, .season-btn:active {
@@ -304,5 +307,145 @@ body {
   .video-btn:hover, .video-btn:focus, .video-btn:active {
     transition: .3s;
     background: url("assets/svg/play_hover.svg");
+    cursor:pointer;
+  }
+
+  .price-cards {
+      display: flex;
+      gap: 25px;
+      margin-bottom: 100px;;
+  }
+
+  .price-card {
+    border: 3px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+
+.price-card-title {
+    display:block;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 43px;
+  }
+
+  .price-card-price {
+    display:block;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    color: #BDAE82;
+    margin-bottom: 20px;
+  }
+
+  .price-card-desc {
+    margin-bottom: 40px;
+  }
+
+  .price-card-desc-item {
+    display: block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .order-btn {
+    background: #BDAE82;
+    border-radius: 0px;
+    height: 55px;
+    width: 220px;
+    align-items: center;
+    border: 0;
+    margin: 0 115px 43px 115px;
+  }
+
+  .order-btn:hover, .order-btn:focus, .order-btn:active {
+    transition: .3s;
+    color: white;
+  }
+
+  .contacts-container {
+    background: url('assets/img/contacts.jpg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contacts-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title-contacts{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    width: 450px;
+    margin: 60px 20px 40px 0;
+  }
+
+  .data {
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    color: #BDAE82;
+    width: 450px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    line-height: 40px;
+  }
+
+  .message {
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    color: #BDAE82;
+    width: 450px;
+    margin-bottom: 30px;
+    resize: none;
+    padding: 5px 20px;
+    line-height: 40px;
+  }
+
+  ::placeholder {
+    font-family: inherit;
+    color: #bdae82;
+    font-size: 20px;
+  }
+
+  .send-btn {
+    background: #BDAE82;
+    border-radius: 0px;
+    height: 55px;
+    width: 220px;
+    align-items: center;
+    border: 0;
+  }
+
+  .send-btn:hover, .send-btn:focus, .send-btn:active {
+    transition: .3s;
+    color: white;
     cursor:pointer;
   }
