@@ -295,4 +295,14 @@ body {
 
   .video-btn {
       position:absolute;
+      background: url("assets/svg/play_unvisited.svg");
+      border: 0;
+      width: 130px;
+      height: 130px;
+  }
+
+  .video-btn:hover, .video-btn:focus, .video-btn:active {
+    transition: .3s;
+    background: url("assets/svg/play_hover.svg");
+    cursor:pointer;
   }
