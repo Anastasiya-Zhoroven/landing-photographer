@@ -16,12 +16,8 @@
     font-weight: 700;
   }
 
-  h {
-      font-family: Merriweather;
-  }
-
-  p {
-    font-family: Inter; 
+  html {
+    scroll-behavior: smooth;
   }
 
 body {
@@ -36,13 +32,16 @@ body {
 
   .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     list-style: none;
+    margin: 20px 0;
+    width: 500px;
+    padding-left: 0;
+    gap: 30px;
   }
 
   .nav-link {
-    padding: 0 20px;
     text-decoration: none;
     font-family: Inter;
     font-style: normal;
@@ -60,9 +59,11 @@ body {
 
   .logo {
       transition: 0.3s;
+      cursor: pointer;
   }
 
   .logo:hover {
+    transition: .3s;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
   }
@@ -86,7 +87,17 @@ body {
     font-size: 20px;
     line-height: 50px;
     color: #fff;
-    margin: 16px 0;
+    margin: 20px 0;
+  }
+
+  .lang {
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .lang:not(.active-lang):hover {
+    transition: .3s;
+    color: #BDAE82;
   }
 
   .active-lang {
@@ -241,7 +252,7 @@ body {
     font-size: 18px;
     text-align:center;
     line-height: 36px;
-    color: #FFFFFF;
+    color: #fff;
     padding: 0 20px 10px 20px;
     margin:0;
   }
@@ -274,8 +285,7 @@ body {
 
   .season-btn:hover, .season-btn:focus, .season-btn:active {
     transition: .3s;
-    color: black;
-    background-color: #BDAE82;
+    color: #fff;
   }
 
   .active-btn {
@@ -302,12 +312,13 @@ body {
       border: 0;
       width: 130px;
       height: 130px;
-  }
+      transition: .3s;
+    }
 
   .video-btn:hover, .video-btn:focus, .video-btn:active {
     transition: .3s;
     background: url("assets/svg/play_hover.svg");
-    cursor:pointer;
+    cursor: pointer;
   }
 
   .price-cards {
@@ -320,6 +331,8 @@ body {
     border: 3px solid #BDAE82;
     box-sizing: border-box;
     border-radius: 0px;
+    width: 450px;
+    height: 505px;
   }
 
 .price-card-title {
@@ -330,7 +343,7 @@ body {
     font-size: 28px;
     line-height: 56px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
     margin-bottom: 20px;
     margin-top: 43px;
   }
@@ -359,7 +372,7 @@ body {
     font-size: 18px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .order-btn {
@@ -370,6 +383,7 @@ body {
     align-items: center;
     border: 0;
     margin: 0 115px 43px 115px;
+    cursor: pointer;
   }
 
   .order-btn:hover, .order-btn:focus, .order-btn:active {
@@ -412,6 +426,10 @@ body {
     width: 450px;
     margin-bottom: 20px;
     padding: 5px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
     line-height: 40px;
   }
 
@@ -426,7 +444,16 @@ body {
     margin-bottom: 30px;
     resize: none;
     padding: 5px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
     line-height: 40px;
+  }
+
+  .data:focus, .message:focus {
+    border: 1px solid white;
+    outline: white;
   }
 
   ::placeholder {
@@ -454,22 +481,16 @@ body {
       display: flex;
       justify-content: space-between;
       background-color: black;
-      /* height: 150px; */
       padding: 50px 20px;
   }
 
-  .footer-info {
-
-  }
-
   .footer-info-ico { 
-    color: white;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .footer-info-year {
@@ -480,7 +501,7 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .github-link {
@@ -491,7 +512,7 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .rs-school-link {
@@ -501,8 +522,23 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
-    color: #FFFFFF;
+    color: #fff;
   }
+
+  .github-link:hover, .rs-school-link:hover {
+    transition: .3s;
+    color: #BDAE82;
+  }
+
+.footer-info-socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin: 7px 0;
+  padding-left: 0px;
+}
 
 .social-link {
     display: inline-block;
