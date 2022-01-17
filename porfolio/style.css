@@ -22,6 +22,7 @@
 
 body {
   background-color: black;
+  margin: 0;
 }
 
 .container {
@@ -32,12 +33,13 @@ body {
 
   .nav-list {
     display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
     margin: 20px 0;
     width: 500px;
-    padding-left: 0;
+    padding-left: 30px;
     gap: 30px;
   }
 
@@ -88,6 +90,8 @@ body {
     line-height: 50px;
     color: #fff;
     margin: 20px 0;
+    display: flex;
+    gap: 10px;
   }
 
   .lang {
@@ -137,12 +141,7 @@ body {
   }
 
   .hero-desc {
-    display:flex;
-    height: 120px;
     width:470px;
-    left: 0%;
-    right: 6%;
-    top: 130px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -384,11 +383,20 @@ body {
     border: 0;
     margin: 0 115px 43px 115px;
     cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
   }
 
   .order-btn:hover, .order-btn:focus, .order-btn:active {
     transition: .3s;
     color: white;
+  }
+
+  .section-contacts {
+    padding: 0;
   }
 
   .contacts-container {
@@ -469,6 +477,11 @@ body {
     width: 220px;
     align-items: center;
     border: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
   }
 
   .send-btn:hover, .send-btn:focus, .send-btn:active {
@@ -484,6 +497,12 @@ body {
       padding: 50px 20px;
   }
 
+  .footer-info {
+    display: flex;
+    gap: 20px;
+    width: 182px;
+  }
+
   .footer-info-ico { 
     font-family: Inter;
     font-style: normal;
@@ -495,7 +514,6 @@ body {
 
   .footer-info-year {
     color: white;
-    padding-left: 20px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -506,7 +524,6 @@ body {
 
   .github-link {
     text-decoration: none;
-    padding-left: 20px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
